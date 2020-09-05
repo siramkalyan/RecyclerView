@@ -1,16 +1,39 @@
 <resources>
     <string name="app_name">RecyclerView</string>
     <string-array name="Image_Titiles">
-        <item >AP</item>
-        <item >TS</item>
-        <item >TN</item>
-        <item >MAHA</item>
-        <item >KERLA</item>
-        <item >UP</item>
-        <item >MP</item>
-        <item >PUN</item>
-        <item >DEL</item>
-        <item >KOL</item>
+        <item >Ice Cream</item>
+        <item >Jelly Bean</item>
+        <item >KitKat</item>
+        <item >LolliPop</item>
+        <item >MarshMello</item>
+        <item >Nougat</item>
+        <item >Oreo</item>
+        <item >Pie</item>
+        <item >Android 10</item>
+
+    </string-array>
+    <string-array name="Image_Versions">
+        <item >4.0 - 4.0.4</item>
+        <item >4.1 – 4.3.1</item>
+        <item >4.4 – 4.4.4</item>
+        <item >5.0 – 5.1.1</item>
+        <item >6.0 – 6.0.1</item>
+        <item >7.0 – 7.1.2</item>
+        <item >8.0 – 8.1</item>
+        <item >9</item>
+        <item >10</item>
+
+    </string-array>
+    <string-array name="Date">
+        <item >2011</item>
+        <item >2012</item>
+        <item >2013</item>
+        <item >2014</item>
+        <item >2015</item>
+        <item >2016</item>
+        <item >2017</item>
+        <item >2018</item>
+        <item >2019</item>
 
     </string-array>
 </resources>

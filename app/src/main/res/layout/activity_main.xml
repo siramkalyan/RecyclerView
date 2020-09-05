@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
+    android:background="#F8E221"
     tools:context=".MainActivity">
 
     <TextView
@@ -12,6 +13,8 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:text="Recycler View Example"
+        android:layout_gravity="center"
+        android:textColor="#000"
         android:textSize="30dp" />
 
     <androidx.recyclerview.widget.RecyclerView

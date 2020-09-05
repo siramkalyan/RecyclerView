@@ -3,9 +3,13 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     >
-
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border1"
+    android:orientation="horizontal">
     <ImageView
         android:layout_width="200dp"
         android:layout_height="200dp"
@@ -13,16 +17,48 @@
         android:src="@drawable/sagi1"
         android:layout_margin="10dp"
         />
-    <TextView
-        android:layout_width="wrap_content"
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+        <TextView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/text_view"
         android:textSize="20dp"
         android:textColor="#F44336"
         android:text="Ranking"
-        android:layout_gravity="center"
-        android:layout_margin="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="10dp"
+            android:shadowColor="#F44336"
+            android:shadowRadius="5"
+            android:fontFamily="bold"
+
         />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_view1"
+        android:textSize="20dp"
+        android:text="Version"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_margin="10dp"
+       />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_view2"
+            android:textSize="20dp"
+            android:text="Release date"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:layout_margin="10dp"
+            android:textColor="#3F51B5"
+            />
+    </LinearLayout>
 
-
+</LinearLayout>
 </LinearLayout>
