@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">RecyclerView</string>
+    <string-array name="Image_Titiles">
+        <item >AP</item>
+        <item >TS</item>
+        <item >TN</item>
+        <item >MAHA</item>
+        <item >KERLA</item>
+        <item >UP</item>
+        <item >MP</item>
+        <item >PUN</item>
+        <item >DEL</item>
+        <item >KOL</item>
+
+    </string-array>
+</resources>
