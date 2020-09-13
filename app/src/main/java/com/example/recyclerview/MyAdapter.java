@@ -17,21 +17,30 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     int images[];
     String version[];
     String date[];
+    CustomItemClickLitstener mlistner;
 
-    public MyAdapter(Context ctx, String[] titles, int[] images,String[] version,String[] date) {
+    public MyAdapter(Context ctx, String[] titles, int[] images, String[] version, String[] date, CustomItemClickLitstener listener) {
         this.ctx = ctx;
         this.titles = titles;
         this.images = images;
         this.version=version;
         this.date=date;
+        this.mlistner=listener;
 
     }
 
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return new MyViewHolder(LayoutInflater.from(ctx)
-                .inflate(R.layout.every_row_design,parent,false));
+        View mView=LayoutInflater.from(ctx).inflate(R.layout.every_row_design,parent,false);
+        final MyViewHolder mViewHolder=new MyViewHolder(mView);
+        mView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mlistner.onItemClick(view,mViewHolder.getPosition());
+            }
+        });
+        return mViewHolder;
     }
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {

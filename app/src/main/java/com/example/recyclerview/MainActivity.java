@@ -4,9 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
+
     RecyclerView recycler;
     int[] img;
     String[] titles;
@@ -25,8 +28,19 @@ public class MainActivity extends AppCompatActivity {
                 R.drawable.marsh,R.drawable.nougat,R.drawable.oreo,R.drawable.pie,
                 R.drawable.an10
         };
-        adapter=new MyAdapter(this,titles,img,version,date);
+        adapter=new MyAdapter(this,titles,img,version,date,new CustomItemClickLitstener(){
+
+            @Override
+            public void onItemClick(View v, int position) {
+                Intent i=new Intent(MainActivity.this,MainActivity2.class);
+                i.putExtra("no",position);
+                startActivity(i);
+            }
+
+
+        });
         recycler.setLayoutManager(new LinearLayoutManager(this));
         recycler.setAdapter(adapter);
     }
+
 }
